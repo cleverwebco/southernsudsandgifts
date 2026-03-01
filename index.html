@@ -521,6 +521,8 @@
   }
 
   /* RESPONSIVE */
+  html, body { overflow-x: hidden; max-width: 100%; }
+
   @media (max-width: 768px) {
     nav ul { display: none; }
     nav { padding: 1rem 1.5rem; }
@@ -529,6 +531,13 @@
     .about-content { padding: 3rem 2rem; }
     .hours-section { grid-template-columns: 1fr; gap: 3rem; padding: 4rem 2rem; }
     .categories { padding: 4rem 1.5rem; }
+    .cat-grid {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0 0.5rem;
+      max-width: 100%;
+    }
+    .hero h1 { font-size: clamp(2.8rem, 12vw, 5rem); }
+    .storefront-wrap { margin-top: 1rem; }
   }
 </style>
 </head>
@@ -774,7 +783,7 @@
 <!-- ABOUT -->
 <section class="about" id="about">
   <div class="about-illustration">
-    <svg viewBox="0 0 320 400" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 320 430" xmlns="http://www.w3.org/2000/svg">
       <ellipse cx="160" cy="200" rx="128" ry="155" fill="rgba(242,217,138,0.13)"/>
       <!-- Stems -->
       <path d="M160 385 C160 305 138 252 118 178" stroke="#7aaa7a" stroke-width="3" fill="none" stroke-linecap="round"/>
@@ -812,10 +821,10 @@
       <circle cx="75"  cy="262" r="9" fill="#f2d98a" opacity="0.6"/>
       <circle cx="245" cy="252" r="8" fill="#e8b4a0" opacity="0.6"/>
       <!-- Soap bar at base -->
-      <rect x="108" y="332" width="104" height="48" rx="13" fill="#f2d98a" opacity="0.65"/>
-      <text x="160" y="362" font-family="Georgia, serif" font-size="12" fill="#4a6080" text-anchor="middle" font-style="italic">Handmade</text>
+      <rect x="108" y="362" width="104" height="48" rx="13" fill="#f2d98a" opacity="0.65"/>
+      <text x="160" y="392" font-family="Georgia, serif" font-size="12" fill="#4a6080" text-anchor="middle" font-style="italic">Handmade</text>
       <!-- Ribbon accent -->
-      <path d="M88 314 Q160 302 232 314" stroke="#e8b4a0" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.7"/>
+      <path d="M88 344 Q160 332 232 344" stroke="#e8b4a0" stroke-width="1.5" fill="none" stroke-dasharray="4,3" opacity="0.7"/>
     </svg>
   </div>
   <div class="about-content">
